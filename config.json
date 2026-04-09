@@ -3,18 +3,16 @@
   "author": "My Bot",
   "botName": "Nayan Bot",
   "botOwner": "Mohammad Nayan",
-  "autoUpdate": false,
+  "autoUpdate": true,
   "runMsg": false,
   "ownerNumber": "8801615298449",
-  "botNumber": "8801962074300",
-  "botUid": "123626976227354",
+  "botNumber": "bot number",
+  "botUid": "bot uid",
   "PREFIX": ",",
   "timeZone": "Asia/Dhaka",
   "admin": [
-    "8801615298449",
-    "123471736639606",
-    "213602246078665",
-    "250701619925225"
+    "your number",
+    "your id"
   ],
   "helpPic": "https://i.postimg.cc/pV7xByGv/IMG-20250106-WA0007.png",
   "welPic": "https://i.postimg.cc/3JQF0qWf/received-383729254132460.jpg",

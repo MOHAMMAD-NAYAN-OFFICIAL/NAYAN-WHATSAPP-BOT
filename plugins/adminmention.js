@@ -31,12 +31,12 @@ module.exports = {
 
 
       const mentionedNumbers = mentioned.map(jid => normalize(jid));
-      console.log(mentionedNumbers)
+      
 
 
       const adminNumbers = (global.config.admin || [])
 
-      console.log(adminNumbers)
+      
 
 
       const isMatch = mentionedNumbers.some(num =>

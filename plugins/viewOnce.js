@@ -51,7 +51,7 @@ module.exports = {
         }
       );
 
-console.log(buffer)
+//console.log(buffer)
       await api.sendMessage(event.threadId, {
         [mediaType]: buffer
       }, { quoted: message });

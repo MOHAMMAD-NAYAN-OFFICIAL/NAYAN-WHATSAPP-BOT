@@ -49,7 +49,7 @@ module.exports = {
 
       const isAdmin = global.isAdmin
 
-      
+
 
       const { threadId, message, senderId } = event;
 
@@ -73,9 +73,11 @@ module.exports = {
 
       if (toggle[threadId] === false) return;
 
-      const lower = text.toLowerCase();
+      const words = text.toLowerCase().split(/\s+/);
 
-      const isBad = badWords.some(w => lower.includes(w));
+      
+
+      const isBad = words.some(w => badWords.includes(w));
       if (!isBad) return;
 
       if (!warnings[senderId]) warnings[senderId] = 0;

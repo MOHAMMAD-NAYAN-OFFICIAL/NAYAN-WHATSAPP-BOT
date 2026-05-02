@@ -37,7 +37,7 @@ module.exports = {
     name: "antibadwords",
     aliases: ["abw", "badwords"],
     prefix: true,
-    permission: 0,
+    permission: 2,
     categorie: "Group",
     credit: "Mohammad Nayan"
   },

@@ -237,7 +237,7 @@ npm install
 node index.js
 ```
 
-> 📱 Scan the QR code with your WhatsApp and the bot will start!
+
 
 ---
 

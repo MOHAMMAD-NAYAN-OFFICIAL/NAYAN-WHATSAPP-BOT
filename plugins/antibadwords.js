@@ -51,7 +51,9 @@ module.exports = {
 
 
 
-      const { threadId, message, senderId } = event;
+      const { threadId, message, senderId, isGroup} = event;
+
+      if (!isGroup) return;
 
       const { isSenderAdmin } = await isAdmin(api, threadId, senderId);
 

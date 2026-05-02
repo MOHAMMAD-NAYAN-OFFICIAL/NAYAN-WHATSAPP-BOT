@@ -52,7 +52,8 @@ module.exports = {
   },
 
   event: async ({ event, api }) => {
-  const { threadId, senderId, message} = event;
+  const { threadId, senderId, message, isGroup} = event;
+    if (!isGroup) return;
   const msg = event.message.message;
 
     const { isSenderAdmin, isBotAdmin } = await isAdmin(api, threadId, senderId);

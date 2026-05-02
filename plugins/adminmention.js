@@ -19,7 +19,8 @@ module.exports = {
   event: async function ({ api, event }) {
     try {
 
-      const { threadId, message, senderId } = event;
+      const { threadId, message, senderId, isGroup } = event;
+      if (!isGroup) return;
       const msg = event.message.message;
 
       const mentioned =

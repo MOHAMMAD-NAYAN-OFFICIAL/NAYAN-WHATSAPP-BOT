@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Nayan%20Bot&fontSize=80&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Multi%20Device%20WhatsApp%20Bot&descAlignY=60&descSize=24" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Nayan%20WhatsApp%20Bot&fontSize=80&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Multi%20Device%20WhatsApp%20Bot&descAlignY=60&descSize=24" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=800&color=00FF88&center=true&vCenter=true&width=750&lines=Welcome+to+Nayan+Bot+%F0%9F%A4%96;Multi+Device+WhatsApp+Bot+%F0%9F%93%B1;Powered+by+Mohammad+Nayan+%E2%9C%A8;Fast+%7C+Smart+%7C+Feature-Rich+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=800&color=00FF88&center=true&vCenter=true&width=750&lines=Welcome+to+Nayan+WhatsApp+Bot+%F0%9F%A4%96;Multi+Device+WhatsApp+Bot+%F0%9F%93%B1;Powered+by+Mohammad+Nayan+%E2%9C%A8;Fast+%7C+Smart+%7C+Feature-Rich+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br><br>
@@ -27,9 +27,9 @@
 
 ---
 
-## 🌟 About Nayan Bot
+## 🌟 About Nayan WhatsApp Bot
 
-> **Nayan Bot** is a powerful, feature-rich **Multi-Device WhatsApp Bot** built with Node.js. It supports group management, AI chat, media downloads, games, and much more — all from your WhatsApp! Created and maintained by **Mohammad Nayan**.
+> **Nayan WhatsApp Bot** is a powerful, feature-rich **Multi-Device WhatsApp Bot** built with Node.js. It supports group management, AI chat, media downloads, games, and much more — all from your WhatsApp! Created and maintained by **Mohammad Nayan**.
 
 ---
 
@@ -188,10 +188,10 @@ prefix: 'both'  →  Both modes work
 
 ```json
 {
-  "PREFIX": ",",
+  "PREFIX": "/",
   "timeZone": "Asia/Dhaka",
   "commandMode": "public",
-  "autoUpdate": false
+  "autoUpdate": true
 }
 ```
 
@@ -282,11 +282,11 @@ NAYAN-WHATSAPP-BOT/
 
 ## 🤝 Community & Support
 
-<div align="center">
-
 [![Telegram Channel](https://img.shields.io/badge/📢_Telegram_Channel-0078E7?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/TEAM_X4X)
 &nbsp;&nbsp;
 [![Telegram Support](https://img.shields.io/badge/💬_Telegram_Support-0078E7?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/TEAM_X4X_CHAT)
+&nbsp;&nbsp;
+[![WhatsApp Support](https://img.shields.io/badge/💬_WhatsApp_Support-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/KuSent8x2rIIl93CD1aKBl)
 
 </div>
 

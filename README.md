@@ -17,7 +17,7 @@
 ![Version](https://img.shields.io/badge/Version-1.1.6-00FF88?style=for-the-badge&logo=github)
 ![Node](https://img.shields.io/badge/Node.js-v20+-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![WhatsApp](https://img.shields.io/badge/WhatsApp-Multi--Device-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
-![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey?style=for-the-badge)
 
 <br>
@@ -292,7 +292,7 @@ NAYAN-WHATSAPP-BOT/
 
 ---
 
-## ⚠️ Disclaimer
+## ⚠️ DMITlaimer
 
 > This bot is made for **educational and personal use only**. The developer is not responsible for any misuse of this bot. Please follow WhatsApp's Terms of Service while using this bot.
 
@@ -300,7 +300,7 @@ NAYAN-WHATSAPP-BOT/
 
 ## 📜 License
 
-This project is licensed under the **ISC License** — see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
 
 ---
 

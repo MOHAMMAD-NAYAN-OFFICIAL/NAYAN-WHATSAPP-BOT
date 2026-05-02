@@ -179,8 +179,8 @@ permission: 3  →  Bot administrators + Group administrators
 ### 🏷️ Prefix Modes
 
 ```js
-prefix: true    →  Only with prefix (e.g., ,help)
-prefix: false   →  Without prefix (e.g., help)
+prefix: true    →  Only with prefix (e.g./ /help)
+prefix: false   →  Without prefix (e.g./ help)
 prefix: 'both'  →  Both modes work
 ```
 

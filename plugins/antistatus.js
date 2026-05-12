@@ -8,51 +8,42 @@ module.exports = {
     prefix: true,
     categorie: 'Moderation',
     credit: 'Custom Plugin',
-    usages: [
-      'antistatus on - Enable status mention blocking.',
-      'antistatus off - Disable status mention blocking.',
-    ],
-    description: 'Deletes messages that mention a WhatsApp status to prevent spam.',
+    usages: ['.antistatus on', '.antistatus off'],
+    description: 'Deletes status mentions automatically.',
   },
 
   start: async ({ event, api, args }) => {
     const { threadId, isSenderAdmin } = event;
-
-    if (!isSenderAdmin) {
-      await api.sendMessage(threadId, { text: 'Only admins can use the antistatus command.' });
-      return;
-    }
+    if (!isSenderAdmin) return api.sendMessage(threadId, { text: 'Admins only!' });
 
     const subCommand = args[0]?.toLowerCase();
-
     if (subCommand === 'on') {
-      if (!antiStatusGroups.includes(threadId)) {
-        antiStatusGroups.push(threadId);
-      }
-      await api.sendMessage(threadId, { text: '✅ AntiStatus protection is now ON.' });
+      if (!antiStatusGroups.includes(threadId)) antiStatusGroups.push(threadId);
+      await api.sendMessage(threadId, { text: '✅ AntiStatus is now ACTIVE.' });
     } else if (subCommand === 'off') {
       antiStatusGroups = antiStatusGroups.filter(g => g !== threadId);
-      await api.sendMessage(threadId, { text: '❌ AntiStatus protection is now OFF.' });
+      await api.sendMessage(threadId, { text: '❌ AntiStatus is now DISABLED.' });
     } else {
-      await api.sendMessage(threadId, { text: 'Usage: .antistatus on/off' });
+      await api.sendMessage(threadId, { text: 'Use: .antistatus on/off' });
     }
   },
 
   event: async ({ event, api }) => {
     const { threadId, message } = event;
-
-    // Check if AntiStatus is enabled for this group
     if (!antiStatusGroups.includes(threadId)) return;
 
-    // Detect if the message is a status mention/broadcast
-    const isStatus = message?.extendedTextMessage?.contextInfo?.remoteJid === "status@broadcast";
+    // স্ট্যাটাস মেনশন ধরার জন্য অ্যাডভান্সড কন্ডিশন
+    const contextInfo = message?.extendedTextMessage?.contextInfo || message?.contextInfo;
+    const isStatus = contextInfo?.remoteJid === "status@broadcast" || 
+                     contextInfo?.participant === "status@broadcast" ||
+                     message?.statusMentionMessage; // কিছু বটের ক্ষেত্রে এটি আলাদা থাকে
 
     if (isStatus) {
       try {
-        const messageId = message.key.id;
-        const participant = message.key.participant || event.senderId;
+        const messageId = event.message.key.id;
+        const participant = event.message.key.participant || event.senderId;
 
-        // Delete the status mention
+        // মেসেজ ডিলিট করার কমান্ড
         await api.sendMessage(threadId, {
           delete: { 
             remoteJid: threadId, 
@@ -61,13 +52,12 @@ module.exports = {
             participant: participant 
           },
         });
+        
+        // ডিলিট করার পর একটি সতর্কবার্তা (ঐচ্ছিক, চাইলে এই লাইনটি মুছে দিতে পারেন)
+        await api.sendMessage(threadId, { text: "🚫 স্ট্যাটাস মেনশন দেওয়া নিষেধ!" });
 
-        // Send warning
-        await api.sendMessage(threadId, {
-          text: '❌ Status mention allowed na!',
-        });
       } catch (error) {
-        console.error('Failed to delete status mention:', error);
+        console.error('Delete failed:', error);
       }
     }
   },

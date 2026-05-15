@@ -1,12 +1,12 @@
 {
   "packname": "My Sticker Pack",
   "author": "My Bot",
-  "botName": "Nayan Bot",
-  "botOwner": "Mohammad Nayan",
+  "botName": "Fahim Bot",
+  "botOwner": "Fahim Hussain ",
   "autoUpdate": true,
   "runMsg": false,
-  "ownerNumber": "8801615298449",
-  "botNumber": "bot number",
+  "ownerNumber": "8801300285514",
+  "botNumber": "8801300285514",
   "botUid": "bot uid",
   "PREFIX": "/",
   "timeZone": "Asia/Dhaka",
@@ -14,8 +14,8 @@
     "your number",
     "your id"
   ],
-  "helpPic": "https://i.postimg.cc/pV7xByGv/IMG-20250106-WA0007.png",
-  "welPic": "https://i.postimg.cc/3JQF0qWf/received-383729254132460.jpg",
+  "helpPic": "https://i.postimg.cc/4dxvC97n/quality-restoration-20260115171105397.png",
+  "welPic": "https://i.postimg.cc/4dxvC97n/quality-restoration-20260115171105397.png",
   "PORT": "3000",
   "delay": 100,
   "msg": {
@@ -27,4 +27,4 @@
   "commandMode": "public",
   "description": "This is a bot for managing group commands and automating tasks.",
   "version": "1.0.4"
-}
+    }

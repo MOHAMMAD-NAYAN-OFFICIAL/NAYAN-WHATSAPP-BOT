@@ -213,7 +213,7 @@ prefix: 'both'  →  Both modes work
 ### 1️⃣ Fork the Repository
 
 <div align="center">
-  <a href="https://github.com/MOHAMMAD-NAYAN-OFFICIAL/NAYAN-WHATSAPP-BOT/fork">
+  <a href="https://github.com/fahim hussine-OFFICIAL/Fahim-WHATSAPP-BOT/fork">
     <img src="https://img.shields.io/badge/%F0%9F%94%B1_Fork_Repository-0078E7?style=for-the-badge&logo=github&logoColor=white" alt="Fork"/>
   </a>
 </div>

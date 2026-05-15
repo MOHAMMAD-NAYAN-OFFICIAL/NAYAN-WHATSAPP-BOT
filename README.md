@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Fahim%20WhatsApp%20Bot&fontSize=80&fontColor=00FFFF&animation=twinkling&fontAlignY=36&desc=Multi%20Device%20WhatsApp%20Bot&descAlignY=60&descSize=24" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Nayan%20WhatsApp%20Bot&fontSize=80&fontColor=00FFFF&animation=twinkling&fontAlignY=36&desc=Multi%20Device%20WhatsApp%20Bot&descAlignY=60&descSize=24" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=800&color=00FF88&center=true&vCenter=true&width=750&lines=Welcome+to+Fahim+WhatsApp+Bot+%F0%9F%A4%96;Multi+Device+WhatsApp+Bot+%F0%9F%93%B1;Powered+by+Fahim+Hussine+%E2%9C%A8;Fast+%7C+Smart+%7C+Feature-Rich+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=800&color=00FF88&center=true&vCenter=true&width=750&lines=Welcome+to+Nayan+WhatsApp+Bot+%F0%9F%A4%96;Multi+Device+WhatsApp+Bot+%F0%9F%93%B1;Powered+by+Mohammad+Nayan+%E2%9C%A8;Fast+%7C+Smart+%7C+Feature-Rich+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br><br>
 
 <a href="https://youtu.be/maayqyNRVoU?si=V0o0wDq81uYf2KAk">
-  <img src="https://i.postimg.cc/k4n1XZVM/IMG-20260514-WA0065.jpg" alt="Fahim Bot" height="280" style="border-radius:20px; box-shadow: 0 8px 32px rgba(0,255,136,0.3);">
+  <img src="https://i.postimg.cc/mgFkCk39/IMG-20250105-WA0013.jpg" alt="Nayan Bot" height="280" style="border-radius:20px; box-shadow: 0 8px 32px rgba(0,255,136,0.3);">
 </a>
 
 <br><br>
@@ -27,9 +27,9 @@
 
 ---
 
-## 🌟 About Fahim WhatsApp bot
+## 🌟 About Nayan WhatsApp Bot
 
-> **Fahim WhatsApp Bot** is a powerful, feature-rich **Multi-Device WhatsApp Bot** built with Node.js. It supports group management, AI chat, media downloads, games, and much more — all from your WhatsApp! Created and maintained by **Fahim Hussine**.
+> **Nayan WhatsApp Bot** is a powerful, feature-rich **Multi-Device WhatsApp Bot** built with Node.js. It supports group management, AI chat, media downloads, games, and much more — all from your WhatsApp! Created and maintained by **Mohammad Nayan**.
 
 ---
 
@@ -282,7 +282,7 @@ NAYAN-WHATSAPP-BOT/
 
 ## 🤝 Community & Support
 
-
+[![Telegram Channel](https://img.shields.io/badge/📢_Telegram_Channel-0078E7?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/TEAM_X4X)
 &nbsp;&nbsp;
 [![Telegram Support](https://img.shields.io/badge/💬_Telegram_Support-0078E7?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/TEAM_X4X_CHAT)
 &nbsp;&nbsp;
@@ -308,7 +308,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
 
-**Made with ❤️ by [Fahim Hussine]( )**
+**Made with ❤️ by [Mohammad Nayan](https://github.com/MOHAMMAD-NAYAN-OFFICIAL)**
 
 *⭐ Star this repo if you found it useful!*
 

@@ -9,7 +9,7 @@
 <br><br>
 
 <a href="https://youtu.be/maayqyNRVoU?si=V0o0wDq81uYf2KAk">
-  <img src="https://i.postimg.cc/mgFkCk39/IMG-20250105-WA0013.jpg" alt="Nayan Bot" height="280" style="border-radius:20px; box-shadow: 0 8px 32px rgba(0,255,136,0.3);">
+  <img src="https://i.postimg.cc/k4n1XZVM/IMG-20260514-WA0065.jpg" alt="Fahim Bot" height="280" style="border-radius:20px; box-shadow: 0 8px 32px rgba(0,255,136,0.3);">
 </a>
 
 <br><br>
@@ -308,7 +308,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
 
-**Made with ❤️ by [Mohammad Nayan](https://github.com/MOHAMMAD-NAYAN-OFFICIAL)**
+**Made with ❤️ by [Fahim Hussine]( )**
 
 *⭐ Star this repo if you found it useful!*
 

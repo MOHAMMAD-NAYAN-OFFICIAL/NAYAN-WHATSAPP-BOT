@@ -27,9 +27,9 @@
 
 ---
 
-## 🌟 About Nayan WhatsApp Bot
+## 🌟 About Fahim WhatsApp bot
 
-> **Nayan WhatsApp Bot** is a powerful, feature-rich **Multi-Device WhatsApp Bot** built with Node.js. It supports group management, AI chat, media downloads, games, and much more — all from your WhatsApp! Created and maintained by **Mohammad Nayan**.
+> **Fahim WhatsApp Bot** is a powerful, feature-rich **Multi-Device WhatsApp Bot** built with Node.js. It supports group management, AI chat, media downloads, games, and much more — all from your WhatsApp! Created and maintained by **Fahim Hussine**.
 
 ---
 
@@ -282,7 +282,7 @@ NAYAN-WHATSAPP-BOT/
 
 ## 🤝 Community & Support
 
-[![Telegram Channel](https://img.shields.io/badge/📢_Telegram_Channel-0078E7?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/TEAM_X4X)
+
 &nbsp;&nbsp;
 [![Telegram Support](https://img.shields.io/badge/💬_Telegram_Support-0078E7?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/TEAM_X4X_CHAT)
 &nbsp;&nbsp;

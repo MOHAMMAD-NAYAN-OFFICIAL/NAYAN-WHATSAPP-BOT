@@ -1,0 +1,30 @@
+{
+  "packname": "My Sticker Pack",
+  "author": "My Bot",
+  "botName": "Fahim Bot",
+  "botOwner": "Fahim Hussain ",
+  "autoUpdate": true,
+  "runMsg": false,
+  "ownerNumber": "8801300285514",
+  "botNumber": "8801300285514",
+  "botUid": "bot uid",
+  "PREFIX": "/",
+  "timeZone": "Asia/Dhaka",
+  "admin": [
+    "your number",
+    "your id"
+  ],
+  "helpPic": "https://i.postimg.cc/4dxvC97n/quality-restoration-20260115171105397.png",
+  "welPic": "https://i.postimg.cc/4dxvC97n/quality-restoration-20260115171105397.png",
+  "PORT": "3000",
+  "delay": 100,
+  "msg": {
+    "modAdmin": false,
+    "ban": false
+  },
+  "imgurKey": "1e87dfc28df0bac",
+  "giphyApiKey": "qnl7ssQChTdPjsKta2Ax2LMaGXz303tq",
+  "commandMode": "public",
+  "description": "This is a bot for managing group commands and automating tasks.",
+  "version": "1.0.4"
+}

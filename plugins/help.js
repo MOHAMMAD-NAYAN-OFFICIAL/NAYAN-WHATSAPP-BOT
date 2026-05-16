@@ -1,5 +1,17 @@
 const axios = require("axios");
 
+// ─── অটোমেটিক ফন্ট স্টাইল কনভার্টার ───
+function stylishFont(text) {
+  const fonts = {
+    'a': 'ᴀ', 'b': 'ʙ', 'c': 'ᴄ', 'd': 'ᴅ', 'e': 'ᴇ', 'f': 'ꜰ', 'g': 'ɢ', 'h': 'ʜ',
+    'i': 'ɪ', 'j': 'ᴊ', 'k': 'ᴋ', 'l': 'ʟ', 'm': 'ᴍ', 'n': 'ɴ', 'o': 'ᴏ', 'p': 'ᴘ',
+    'q': 'ǫ', 'r': 'ʀ', 's': 's', 't': 'ᴛ', 'u': 'ᴜ', 'v': 'ᴠ', 'w': 'ᴡ', 'x': 'x',
+    'y': 'ʏ', 'z': 'ᴢ',
+    '0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄', '5': '₅', '6': '₆', '7': '₇', '8': '₈', '9': '₉'
+  };
+  return text.toLowerCase().split('').map(char => fonts[char] || char).join('');
+}
+
 module.exports = {
   config: {
     name: 'help',
@@ -82,8 +94,8 @@ module.exports = {
     let responseText = `╭═══𝄟 💜 𝄟═══╮
    ✨ 𝗙𝗔𝗛𝗜𝗠 𝗕𝗢𝗧 ✨
 ╰═══𝄟 💜 𝄟═══╯
-│ 👑 𝙊𝙬𝙣𝙚𝙧: ${global.config.botOwner || "Fahim Hussine"}
-│ ⭕ 𝙋𝙧𝙚𝙛𝙞x: \`${prefix || globalPrefix}\`
+│ 👑 𝙊𝙬𝙣𝙚rer: ${global.config.botOwner || "Fahim Hussine"}
+│ ⭕ 𝙋𝙧𝙚𝙛𝙞𝙭: \`${prefix || globalPrefix}\`
 │ 📊 𝙏𝙤𝙩𝙖𝙡 𝘾𝙢𝙙𝙨: ${commands.length}
 │ 🕒 𝙏𝙞𝙢𝙚: ${currentTime}
 │ 📅 𝘿𝙖𝙩𝙚: ${currentDate}
@@ -92,8 +104,9 @@ module.exports = {
 「 𝗔𝗩𝗔𝗜𝗟𝗔𝗕𝗟𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 」`;
 
     for (const category in categories) {
+      // 💡 এখানে stylishFont ফাংশন ব্যবহার করে কমান্ডের নামগুলো কিউট স্টাইলিশ করা হয়েছে
       const cmds = categories[category]
-        .map(cmd => `  ├─  ${prefix}${cmd.name}`)
+        .map(cmd => `  ├─  ${prefix}${stylishFont(cmd.name)}`)
         .join("\n");
 
       responseText += `\n\n🔵 ${category}\n${cmds}\n  ╰──────────────`;

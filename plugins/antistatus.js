@@ -2,63 +2,71 @@ let antiStatusGroups = [];
 
 module.exports = {
   config: {
-    name: 'antistatus',
-    aliases: ['astatus'],
+    name: "antistatus",
+    aliases: ["astatus"],
     permission: 2,
     prefix: true,
-    categorie: 'Moderation',
-    credit: 'Custom Plugin',
-    usages: ['.antistatus on', '.antistatus off'],
-    description: 'Deletes status mentions automatically.',
+    categorie: "Moderation",
+    credit: "Fahim Bot",
+    usages: ["/antistatus on", "/antistatus off"],
+    description: "Delete status mentions automatically",
   },
 
   start: async ({ event, api, args }) => {
-    const { threadId, isSenderAdmin } = event;
-    if (!isSenderAdmin) return api.sendMessage(threadId, { text: 'Admins only!' });
+    const threadId = event.threadId;
+    const sub = args[0]?.toLowerCase();
 
-    const subCommand = args[0]?.toLowerCase();
-    if (subCommand === 'on') {
-      if (!antiStatusGroups.includes(threadId)) antiStatusGroups.push(threadId);
-      await api.sendMessage(threadId, { text: '✅ AntiStatus is now ACTIVE.' });
-    } else if (subCommand === 'off') {
-      antiStatusGroups = antiStatusGroups.filter(g => g !== threadId);
-      await api.sendMessage(threadId, { text: '❌ AntiStatus is now DISABLED.' });
-    } else {
-      await api.sendMessage(threadId, { text: 'Use: .antistatus on/off' });
+    if (sub === "on") {
+      if (antiStatusGroups.includes(threadId)) {
+        return api.sendMessage(threadId, { text: "⚠️ AntiStatus already ON" });
+      }
+      antiStatusGroups.push(threadId);
+      return api.sendMessage(threadId, { text: "✅ AntiStatus ON" });
     }
+
+    if (sub === "off") {
+      if (!antiStatusGroups.includes(threadId)) {
+        return api.sendMessage(threadId, { text: "⚠️ AntiStatus already OFF" });
+      }
+      antiStatusGroups = antiStatusGroups.filter(g => g !== threadId);
+      return api.sendMessage(threadId, { text: "❌ AntiStatus OFF" });
+    }
+
+    return api.sendMessage(threadId, { text: `Use:\n/antistatus on\n/antistatus off` });
   },
 
   event: async ({ event, api }) => {
-    const { threadId, message } = event;
-    if (!antiStatusGroups.includes(threadId)) return;
+    try {
+      const threadId = event.threadId;
+      if (!antiStatusGroups.includes(threadId)) return;
 
-    // স্ট্যাটাস মেনশন ধরার জন্য অ্যাডভান্সড কন্ডিশন
-    const contextInfo = message?.extendedTextMessage?.contextInfo || message?.contextInfo;
-    const isStatus = contextInfo?.remoteJid === "status@broadcast" || 
-                     contextInfo?.participant === "status@broadcast" ||
-                     message?.statusMentionMessage; // কিছু বটের ক্ষেত্রে এটি আলাদা থাকে
+      // স্ট্যাটাস মেনশন ধরার জন্য ডাটা চেক
+      const eventString = JSON.stringify(event);
+      const isStatus = eventString.includes("status@broadcast");
 
-    if (isStatus) {
-      try {
-        const messageId = event.message.key.id;
-        const participant = event.message.key.participant || event.senderId;
+      if (isStatus) {
+        // মেসেজ আইডি এবং পার্টিসিপেন্ট আইডি ঠিকভাবে খুঁজে বের করা
+        const msgKey = event.key || event.message?.key;
+        const sender = event.senderID || event.senderId || msgKey?.participant;
 
-        // মেসেজ ডিলিট করার কমান্ড
-        await api.sendMessage(threadId, {
-          delete: { 
-            remoteJid: threadId, 
-            fromMe: false, 
-            id: messageId, 
-            participant: participant 
-          },
-        });
-        
-        // ডিলিট করার পর একটি সতর্কবার্তা (ঐচ্ছিক, চাইলে এই লাইনটি মুছে দিতে পারেন)
-        await api.sendMessage(threadId, { text: "🚫 স্ট্যাটাস মেনশন দেওয়া নিষেধ!" });
+        if (msgKey && msgKey.id) {
+          await api.sendMessage(threadId, {
+            delete: {
+              remoteJid: threadId,
+              fromMe: false,
+              id: msgKey.id,
+              participant: msgKey.participant || sender
+            }
+          });
 
-      } catch (error) {
-        console.error('Delete failed:', error);
+          await api.sendMessage(threadId, {
+            text: `❌ @${sender.split("@")[0]} 🚫 স্ট্যাটাস মেনশন দেওয়া নিষেধ!Next time Kick`,
+            mentions: [sender]
+          });
+        }
       }
+    } catch (e) {
+      console.log("AntiStatus Event Error:", e);
     }
   },
 };

@@ -23,35 +23,32 @@ module.exports = {
           : 'No admins found.';
 
       const infoMessage = `
---------------------------------------------
-𝐍𝐚𝐦𝐞           : 𝐌𝐨𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐲𝐚𝐧
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤       : 𝐌𝐨𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐲𝐚𝐧
-𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧       : 𝐈𝐬𝐥𝐚𝐦
-𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: 𝐓𝐚𝐧𝐠𝐚𝐢𝐥, 𝐃𝐡𝐚𝐤𝐚
-𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬 : 𝐌𝐨𝐲𝐦𝐨𝐧𝐬𝐢𝐧𝐡, 𝐃𝐡𝐚𝐤𝐚 𝐁𝐲𝐩𝐚𝐬𝐬
-𝐆𝐞𝐧𝐝𝐞𝐫       : 𝐌𝐚𝐥𝐞
-𝐀𝐠𝐞           : 𝟏𝟖+
-𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 : 𝐒𝐢𝐧𝐠𝐥𝐞
-𝐖𝐨𝐫𝐤         : 𝐒𝐭𝐮𝐝𝐞𝐧𝐭
-𝐆𝐦𝐚𝐢𝐥       : mohammadnayan447@gmail.com
-𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩   : wa.me/+8801615298449
-𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦     : t.me/MOHAMMADNAYAN
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤: https://www.facebook.com/www.xnxx.com169
+---------------------------------------
 
---------------------------------------------
+╭═══𝄟 👑 𝄟═══╮
+    𝗣𝗘𝗥𝗦𝗢𝗡𝗔𝗟 𝗜𝗡𝗙𝗢
+╰═══𝄟 👑 𝄟═══╯
+│ 👤 𝐍𝐚𝐦𝐞       ✦ ꜰᴀʜɪᴍ ʙʙᴢ
+│ 📍𝐀𝐝𝐝𝐫𝐞𝐬𝐬     ✦ ꜱʏʟʜᴇᴛ
+│ 🎂 𝐀𝐠𝐞           ✦ 𝟏𝟕+
+│ 💼 𝐖𝐨𝐫𝐤        ✦ ꜱᴛᴜᴅᴇɴᴛ
+│ 🌙 𝖱𝖾𝗅𝗂𝗀𝗂𝗈𝗇    ✦ ɪꜱʟᴀᴍ
+│ 💍 𝖱𝖾𝗅𝖺𝗍𝗂𝗈𝗇𝗌𝗁𝗂𝗉 ✦
+     🇸‌🇮‌🇳‌🇬‌🇱‌🇪‌
+╰═════════════╯
+╭══──────══╮
+  ✨ 𝐍𝐢𝐜𝐞 𝐓𝐨 𝐌𝐞𝐞𝐭 𝐘𝐨𝐮 ✨
+╰══──────══╯
+---------------------------------------
 \`\`\`
-🖥️ Server Info:
-• Platform       : ${os.platform()}
-• CPU            : ${os.cpus()[0].model}
-• Node.js Version: ${process.version}
-• Uptime         : ${uptime}
-• Total Memory   : ${(os.totalmem() / (1024 ** 3)).toFixed(2)} GB
-• Free Memory    : ${(os.freemem() / (1024 ** 3)).toFixed(2)} GB
+╭══──────══╮
+ᴡʜᴀᴛꜱᴀᴩᴩ ᴄʜɴᴇɴʟ ʟɪɴᴋ:https://whatsapp.com/channel/0029Vb82hsMEawdr3Iyda72V
+╰══──────══╯
 \`\`\``;
 
       await api.sendMessage(
             event.threadId,
-            { image: { url: "https://i.postimg.cc/2y9bTqv6/retouch-2025071913433217.jpg" }, caption: infoMessage || '' },
+            { image: { url: "https://i.postimg.cc/8kthmz2N/IMG-20260513-WA0029.jpg" }, caption: infoMessage || '' },
             { quoted: event.message }
           );;
     } catch (error) {
